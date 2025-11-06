@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+playerctl --player=spotify metadata --format '{{title}}|{{artist}}|{{mpris:artUrl}}' --follow |
+while IFS="|" read -r title artist arturl; do
+
+    img=""
+    if [[ -n "$arturl" ]]; then
+        img="/tmp/spotify_art.jpg"
+        curl -s "$arturl" -o "$img"
+    fi
+
+    message="<big><b>$title</b></big>\n$artist"
+
+    if [[ -f "$img" ]]; then
+        notify-send \
+            "" \
+            "$message" \
+            -i "$img" \
+            -u normal
+    else
+        notify-send \
+            "" \
+            "$message" \
+            -u normal
+    fi
+
+done
