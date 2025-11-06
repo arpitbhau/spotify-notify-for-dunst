@@ -1,4 +1,6 @@
-## tested on arch hyprland with HyDE dotfiles configs
+\n
+
+### *tested on arch hyprland with HyDE dotfiles configs*
 
 
 # SETUP
