@@ -1,4 +1,4 @@
-\n
+<br>
 
 ### *tested on arch hyprland with HyDE dotfiles configs*
 
