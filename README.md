@@ -23,7 +23,7 @@
 
   and that's it you got the notification of spotify track change running.
 
-
+  ## if you any other method for making script run on startup, feel free to use your own way.
 
   ## NOTE: make sure dunstrc file is setup correct with `markup=full` also check your config for the dunst too if the script doesn't work.
 
