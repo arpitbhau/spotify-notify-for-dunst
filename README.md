@@ -71,11 +71,17 @@
 <br>
 
 # SETUP
+  ### requirements
+  1. `ffmpeg`
+  2. `playerctl`
+
   ## make the script `spotify-notfiy` run when the user logs in
   
   <br>
   
   ## 1. making a systemd daemon
+
+  
   1. get the script `spotify-notify` to `~./local/bin/`. (this path is completly optional you ccan put it any anywhere you want just remember the path)
   2. make it executable `chmod +x ~/.local/bin/spotify-notify`
   3. create the file `~/.config/systemd/user/spotify-notify.service` and paste this inside it 
