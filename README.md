@@ -47,11 +47,15 @@
   The title is bold and slightly larger than the artist name:
   
   ```xml
-  <span size='15000'><b>Song Title</b></span>
+  <big><b>Song Title</b></big>
   Artist Name
   ```
   
   This keeps the look clean without being oversized.
+
+  ### Local Song imported into spotify
+  
+  we just scan every song in the `MUSIC_DIR` and compare the output of `playerctl metadata title` to the song name embedded in the scanned song, if we get it pull out the song image from that file.
   
   ### Sending the Notification
   
